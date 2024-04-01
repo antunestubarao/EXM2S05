@@ -13,16 +13,16 @@ public class DevHeroiAplicacao {
 
         while (!sair) {
             Menu.exibirMenu();
-            int opcao = Menu.solicitarOpcao();
+            Operacao opcao = Menu.solicitarOpcao();
 
             switch (opcao) {
-                case 1:
-                    adicionarHeroi();
+                case ADICIONAR:
+                    adicionarHeroi(); // logica par aadicionar
                     break;
-                case 2:
+                case LISTAR:
                     listarHerois();
                     break;
-                case 3:
+                case SAIR:
                     sair = true;
                     System.out.println("Uma pena que você vai embora. Mas volte logo!");
                     break;

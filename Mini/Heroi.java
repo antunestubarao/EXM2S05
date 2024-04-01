@@ -1,10 +1,13 @@
 package Mini;
 
+//classe Heroi
 public class Heroi {
     private String nome;
     private String superpoder;
     private String usuario;
     private int idade;
+
+    // construtores
 
     public Heroi(String nome, String superpoder, String usuario, int idade) {
         this.nome = nome;

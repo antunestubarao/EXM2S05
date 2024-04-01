@@ -11,10 +11,21 @@ public class Menu {
         System.out.println("==========================");
     }
 
-    public int solicitarOpcao() {
+    public Operacao solicitarOpcao() {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Liste os Herois para ver os cadastrados e Adicione o seu!");
         System.out.print("Escolha o que fazer: ");
-        return scanner.nextInt();
+        int opcao = scanner.nextInt();
+
+        switch (opcao) {
+            case 1:
+                return Operacao.ADICIONAR;
+            case 2:
+                return Operacao.LISTAR;
+            case 3:
+                return Operacao.SAIR;
+            default:
+                return null;
+        }
     }
 }
